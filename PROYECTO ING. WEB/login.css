@@ -1,0 +1,124 @@
+/* General Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+body {
+    display: flex; /* Usa flexbox para el layout */
+    flex-direction: column; /* Apila elementos verticalmente */
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #1b1462;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1462;
+    padding: 20px;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: #78dbf8;
+    color: #1b1462;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    background-color: #1b1462;
+    color: #fff;
+    border-color: #78dbf8;
+}
+
+/* Login Form Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Permite que esta sección ocupe el espacio disponible */
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #1b1462;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #1b1462;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #78dbf8;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #78dbf8;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #1b1462;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    font-size: 14px;
+}
