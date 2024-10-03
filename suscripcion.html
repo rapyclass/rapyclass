@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de Suscripción - RapyClass</title>
+    <link rel="stylesheet" href="suscripcion.css">
+    <script src="suscripcion.js" defer></script> <!-- Vincular el archivo JavaScript -->
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <header class="navbar">
+        <div class="logito">
+            <a href="pagina principal.html" class="logo">RapyClass</a>
+        </div>
+        <nav>
+            <a href="login.html" class="cta-button">Iniciar Sesión</a>
+            <a href="register.html" class="cta-button">Registrarse</a>
+        </nav>
+    </header>
+
+    <!-- Seccion central de descripción -->
+    <section class="description">
+        <h1>Escoge el plan que mejor se adapta a tus necesidades</h1>
+        <p>Tenemos opciones flexibles para que puedas aprender a tu ritmo y mejorar tus habilidades.</p>
+    </section>
+
+    <!-- Seccion de suscripciones -->
+    <section class="subscription-plans">
+        <div class="plan basico">
+            <h2>Basic</h2>
+            <p class="price">$19.99</p>
+            <ul>
+                <li>✔ Acceso a cursos básicos</li>
+                <li>✔ Acceso desde cualquier dispositivo</li>
+                <li>✘ Certificación</li>
+                <li>✘ Soporte premium</li>
+            </ul>
+            <input type="submit" class="cta-button" value="Seleccionar" onclick="showTab('tab-basic'); return false;">
+        </div>
+
+        <div class="plan standard">
+            <h2>Standard</h2>
+            <p class="price">$27.99</p>
+            <ul>
+                <li>✔ Acceso a todos los cursos</li>
+                <li>✔ Acceso desde cualquier dispositivo</li>
+                <li>✔ Certificación</li>
+                <li>✘ Soporte premium</li>
+            </ul>
+            <input type="submit" class="cta-button" value="Seleccionar" onclick="showTab('tab-standard'); return false;">
+        </div>
+
+        <div class="plan premium">
+            <h2>Premium</h2>
+            <p class="price">$49.99</p>
+            <ul>
+                <li>✔ Acceso a todos los cursos</li>
+                <li>✔ Acceso desde cualquier dispositivo</li>
+                <li>✔ Certificación</li>
+                <li>✔ Soporte premium</li>
+            </ul>
+            <input type="submit" class="cta-button" value="Seleccionar" onclick="showTab('tab-premium'); return false;">
+        </div>
+    </section>
+
+    <!-- Sección para explicar las suscripciones -->
+    <div class="tab-content" id="tab-basic" style="display: none;">
+        <h2>Detalles del Plan Basic</h2>
+        <p>Descripción detallada del plan Basic.</p>
+    </div>
+
+    <div class="tab-content" id="tab-standard" style="display: none;">
+        <h2>Detalles del Plan Standard</h2>
+        <p>Descripción detallada del plan Standard.</p>
+    </div>
+
+    <div class="tab-content" id="tab-premium" style="display: none;">
+        <h2>Detalles del Plan Premium</h2>
+        <p>Descripción detallada del plan Premium.</p>
+    </div>
+
+    <!-- Barra inferior -->
+    <footer class="footer">
+        <p>© 2024 RapyClass - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
