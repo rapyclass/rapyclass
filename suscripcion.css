@@ -146,6 +146,41 @@ a {
     border-color: #78dbf8;
 }
 
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Acomoda los elementos de la navbar verticalmente */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+        padding: 10px; /* Reduce el padding en móviles */
+    }
+
+    .navbar .logo {
+        font-size: 24px; /* Reduce el tamaño de la fuente en móviles */
+        margin-bottom: 10px; /* Espaciado inferior en la logo */
+    }
+
+    .navbar nav a {
+        margin: 5px 0; /* Espaciado entre enlaces */
+        width: 100%; /* Hace que los enlaces ocupen el 100% del ancho */
+        text-align: center; /* Centra el texto en los botones */
+        padding: 12px; /* Aumenta el padding */
+    }
+
+    .subscription-plans {
+        flex-direction: column; /* Apila los planes verticalmente */
+        align-items: center; /* Centra los planes */
+    }
+
+    .plan {
+        width: 90%; /* Ancho más pequeño para que quepa mejor en pantallas móviles */
+    }
+
+    .cta-button {
+        width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+        padding: 15px; /* Aumenta el padding del botón */
+    }
+}
+
 /* Footer Styling */
 .footer {
     background-color: #333da3; 
@@ -158,22 +193,3 @@ a {
     font-size: 14px;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Cambiar a diseño de columna */
-        align-items: center; /* Centrar elementos */
-        padding: 10px; /* Ajustar el espaciado */
-    }
-
-    .navbar nav {
-        display: flex;
-        flex-direction: column; /* Botones en una columna */
-        margin-top: 10px; /* Espacio entre el logo y los botones */
-    }
-
-    .navbar nav a {
-        margin: 5px 0; /* Espaciado vertical entre los botones */
-        width: 100%; /* Hacer que los botones ocupen todo el ancho */
-        text-align: center; /* Centrar el texto */
-    }
-}
