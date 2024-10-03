@@ -157,3 +157,23 @@ a {
 .footer p {
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambiar a diseño de columna */
+        align-items: center; /* Centrar elementos */
+        padding: 10px; /* Ajustar el espaciado */
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-direction: column; /* Botones en una columna */
+        margin-top: 10px; /* Espacio entre el logo y los botones */
+    }
+
+    .navbar nav a {
+        margin: 5px 0; /* Espaciado vertical entre los botones */
+        width: 100%; /* Hacer que los botones ocupen todo el ancho */
+        text-align: center; /* Centrar el texto */
+    }
+}
